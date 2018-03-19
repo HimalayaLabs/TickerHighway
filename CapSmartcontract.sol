@@ -237,7 +237,7 @@ contract CAPITALCoin is ERC20Interface, SafeMath, Owned {
     string public constant name = "Capital Coin";
     string public constant symbol = "CAP";
     uint8 public constant decimals = 4;
-    string public version = '0.1.56.98';
+    string public version = '0.1.56.99';
     string public constant author = "Шри Xари Капу";
 
     bool public transfersFrozen = false;
@@ -370,7 +370,6 @@ contract CAPITALCoin is ERC20Interface, SafeMath, Owned {
 
         Transfer(_token, owner, balance);
     }
-
 
     event Freeze (address indexed owner);
     event Unfreeze (address indexed owner);
